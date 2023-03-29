@@ -1,0 +1,13 @@
+version: '3'
+services:
+  service1:
+    ports:
+      - "9200:9200"
+    image: service1:latest  
+  service2:
+    ports:
+      - "8030:8030"
+    # image to fetch from docker hub
+    image: service2:latest
+
+    

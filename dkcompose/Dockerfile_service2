@@ -1,0 +1,5 @@
+FROM openjdk:17
+ENV LOG_FILE_PATH=/tmp/sample
+ADD sample-0.0.1-SNAPSHOT.jar sample-0.0.1-SNAPSHOT.jar
+ENTRYPOINT [ "java", "-jar" , "sample-0.0.1-SNAPSHOT.jar" ]
+EXPOSE 8030
